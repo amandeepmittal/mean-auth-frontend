@@ -1,3 +1,9 @@
-.acme-navbar-text {
-  color: white;
+h1 {
+  font-size: 2em;
+  margin: 0;
+  line-height: 1.25em;
+}
+
+a:hover, a:focus {
+  color: greenyellow;
 }

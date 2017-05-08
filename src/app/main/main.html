@@ -1,21 +1,7 @@
 <div class="container">
 
-  <div>
-    <acme-navbar creation-date="main.creationDate"></acme-navbar>
-  </div>
-
   <div class="jumbotron text-center">
-    <h1>'Allo, 'Allo!</h1>
-    <p class="lead">
-      <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
-      Always a pleasure scaffolding your apps.
-    </p>
-    <p class="animated infinite" ng-class="main.classAnimation">
-      <button type="button" class="btn btn-lg btn-success" ng-click="main.showToastr()">Splendid Toastr</button>
-    </p>
-    <p>
-      With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']"></acme-malarkey>
-    </p>
+    <h1>MEAN Auth <span><i class="glyphicon glyphicon-lock"></i></span></h1>
   </div>
 
   <div class="row">
@@ -31,4 +17,41 @@
     </div>
   </div>
 
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="text-center">About MEAN Aith</h2>
+    </div>
+    <div class="col-md-4 col-sm-6 text-center">
+      <div class="jumbotron" style="height: 300px;">
+        <span class="fa fa-bolt fa-4x"></span><br><br>
+        <p>Smooth, sleek interface makes it fun to create user profiles at the drop of a hat, even mid-lecture.</p>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 text-center">
+      <div class="jumbotron" style="height: 300px;">
+        <span class="fa fa-lock fa-4x"></span><br>
+        <p>Signup as a user</p>
+        <span class="fa fa-list-ol fa-4x"></span><br><br>
+        <p>Fill out your details</p>
+      </div>
+    </div>
+    <div class="col-md-4  col-sm-6 text-center">
+      <div class="jumbotron" style="height: 300px;">
+        <span class="fa fa-user fa-4x"></span><br><br>
+        <p>Easy Log in</p>
+        <p>Save your polls and votes.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1>Get Started</h1>
+    </div>
+    <div class="col-md-offset-2 col-md-8">
+      <div class="btn-group btn-group-justified">
+        <a ui-sref="login" class="btn btn-primary btn-lg">Login</a>
+        <a ui-sref="signup" class="btn btn-success btn-lg">Signup</a>
+      </div>
+    </div>
+  </div>
 </div>

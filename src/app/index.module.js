@@ -2,6 +2,6 @@
   'use strict';
 
   angular
-    .module('meanAuthFrontend', ['ui.router', 'toastr']);
+    .module('meanAuthFrontend', ['ui.router', 'toastr', 'satellizer']);
 
 })();

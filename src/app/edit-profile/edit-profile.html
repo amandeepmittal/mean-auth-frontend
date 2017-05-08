@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-2 col-md-6">
+      <form class="form-horizontal" name="edit">
+        <fieldset>
+          <legend>Edit Profile: {{user.email}}</legend>
+          <!--Name-->
+          <div class="form-group">
+            <label class="col-lg-2 control-label">Name</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="inputName" name="name" ng-model="user.name" value="{{user.name}}" placeholder="{{user.name}}" required>
+            </div>
+          </div>
+          <!--Location/City-->
+          <div class="form-group">
+            <label class="col-lg-2 control-label">City</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="inputCity" name="city" ng-model="user.location.city" value="{{user.location.city}}" placeholder="{{user.location.city}}">
+            </div>
+          </div>
+          <!--Location/Country-->
+          <div class="form-group">
+            <label class="col-lg-2 control-label">County</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="inputCountry" name="country" ng-model="user.location.country" placeholder="{{user.location.country}}">
+            </div>
+          </div>
+          <!--Profile/Website-->
+          <div class="form-group">
+            <label class="col-lg-2 control-label">Website</label>
+            <div class="col-lg-10">
+              <input type="text" class="form-control" id="inputWebsite" name="website" ng-model="user.profile.website" placeholder="{{user.profile.website}}">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+              <button type="submit" class="btn btn-primary" ng-click="editProfile()">Update Profile</button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+
+</div>

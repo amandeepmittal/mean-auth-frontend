@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <div class="well well-sm">
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <img src="{{user.profile.image || 'http://placehold.it/250x250'}}" alt="" class="img-rounded img-responsive" />
+          </div>
+          <div class="col-sm-6 col-md-8">
+            <h4>{{user.name}}</h4>
+            <cite title="{{user.location.city}}"><i class="glyphicon glyphicon-map-marker"> <i>{{user.location.city}}, {{user.location.country}}</i>
+            </i></cite>
+            <p>
+              <i class="glyphicon glyphicon-envelope"></i> {{user.email}}
+              <br />
+              <i class="glyphicon glyphicon-globe"></i><a href="{{user.profile.website}}"> {{user.profile.website}}</a>
+              <br />
+
+              <a href="/#/profile/edit" class="btn btn-success btn-sm">Edit Profile</a>
+            <!-- Split button -->
+            <!--<div class="btn-group">-->
+              <!--<button type="button" class="btn btn-primary">-->
+                <!--Social</button>-->
+              <!--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">-->
+                <!--<span class="caret"></span><span class="sr-only">Social</span>-->
+              <!--</button>-->
+              <!--<ul class="dropdown-menu" role="menu">-->
+                <!--<li><a href="#">Twitter</a></li>-->
+                <!--<li><a href="https://plus.google.com/+Jquery2dotnet/posts">Google +</a></li>-->
+                <!--<li><a href="https://www.facebook.com/jquery2dotnet">Facebook</a></li>-->
+                <!--<li class="divider"></li>-->
+                <!--<li><a href="#">Github</a></li>-->
+              <!--</ul>-->
+            <!--</div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
